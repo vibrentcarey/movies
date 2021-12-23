@@ -1,0 +1,33 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.input {
+  margin-top: 0.4rem;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.error{
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  color: #ffcccb;
+}
+.button{
+  margin-top: 1rem;;
+}
