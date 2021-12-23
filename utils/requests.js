@@ -11,20 +11,20 @@ const requests = {
   },
   action: {
     title: 'Action',
-    url: `/discover/movie?api_key=${API_KEY}&with-genres=28`
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=28`
   },
   comedy: {
     title: 'Comedy',
-    url: `/discover/movie?api_key=${API_KEY}&with-genres=35`
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=35`
 
   },
   horror: {
     title: 'Horror',
-    url: `/discover/movie?api_key=${API_KEY}&with-genres=27`
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=27`
   },
   romance: {
     title: 'Romance',
-    url: `/discover/movie?api_key=${API_KEY}&with-genres=10749`
+    url: `/discover/movie?api_key=${API_KEY}&with_genres=10749`
   }
 }
 
