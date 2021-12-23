@@ -1,0 +1,14 @@
+@use '../../styles/variables.module.scss' as variables;
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon {
+  height: 50px;
+}
+/*# sourceMappingURL=Header.module.css.map */
