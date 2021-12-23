@@ -1,14 +1,15 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import {SearchIcon, HomeIcon} from '@heroicons/react/outline'
+import Link from 'next/link';
 
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <HomeIcon className={styles.icon}/>
-        <SearchIcon className={styles.icon}/>
+        <Link href='/' passHref><HomeIcon className={styles.icon}/></Link>
+        <Link href='/search' passHref><SearchIcon className={styles.icon}/></Link>
       </nav>
     </header>
   );
