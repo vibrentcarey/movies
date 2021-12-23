@@ -1,3 +1,5 @@
+@use '../styles/variables.module.scss' as colors;
+
 .search {
   display: flex;
   flex-direction: column;
@@ -22,6 +24,8 @@
   border: none;
   outline: none;
   font-size: 16px;
+  border-radius: 5px;
+  padding: 0.4rem;
 }
 .error{
   font-size: 0.6rem;
@@ -29,5 +33,18 @@
   color: #ffcccb;
 }
 .button{
-  margin-top: 1rem;;
+  margin-top: 1rem;
+  background-color: colors.$medium-blue;
+  border: none;
+  font-size: 1.2rem;
+  color: colors.$light-blue;
+  border-radius: 5px;
+  padding: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  &:hover{
+    color: colors.$white;
+    cursor: pointer;
+    background-color: darken(colors.$medium-blue, 10%);
+  }
 }
