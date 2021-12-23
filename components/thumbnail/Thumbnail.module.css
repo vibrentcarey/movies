@@ -1,0 +1,26 @@
+.thumbnail {
+  width: 250px;
+  height: 250px;
+  margin: 1rem;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-align: center;
+}
+
+.thumbnail:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=Thumbnail.module.css.map */

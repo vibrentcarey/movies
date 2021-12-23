@@ -1,0 +1,33 @@
+@use '../../styles/variables.module.scss'as colors;
+
+.thumbnail {
+  width: 250px;
+  height: 295px;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 1s;
+  text-align: center;
+  color: colors.$white;
+
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.image {
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 1rem;
+}
+
+.details {
+  margin: 0.4rem;
+}
+.info{
+  color: colors.$white;
+}
