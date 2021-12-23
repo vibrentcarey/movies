@@ -1,5 +1,5 @@
 import React from 'react';
-import Thumbnail from '../Thumbnail/Thumbnail';
+import Thumbnail from '../thumbnail/Thumbnail';
 import styles from './Results.module.scss';
 
 const Results = ({ results }) => {
