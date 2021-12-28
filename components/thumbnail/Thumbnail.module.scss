@@ -6,15 +6,11 @@
   margin: 1rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transition: all 1s;
   text-align: center;
   color: colors.$white;
 
 
-  &:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
+
 }
 
 .image {
@@ -28,6 +24,24 @@
 .details {
   margin: 0.4rem;
 }
-.info{
+
+.info {
   color: colors.$white;
+}
+
+.icon {
+  height: 20px;
+  transition: all 0.6s;
+
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: red;
+  }
+}
+
+.fav {
+  height: 20px;
+  color: red;
 }
