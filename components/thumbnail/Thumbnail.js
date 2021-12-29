@@ -15,14 +15,13 @@ const Thumbnail = ({ image, title, release, rank, poster, fav }) => {
       setAdded(false)
     }, 3000)
   }
-console.log(fav);
   return (
     <article className={styles.thumbnail}>
       <Image layout='responsive' height={150}  width={250} src={`${BASE_URL}${image || poster}`} alt='movie image' className={styles.image}/>
       <h3 className={styles.title}>{title}</h3>
       <p className={styles.details}>Release Date: <span className={styles.info}>{release}</span> </p>
       <p className={styles.details}>Rating: <span className={styles.info}>{rank}</span></p>
-      {added && <p>Added to favourites</p>}
+      {added && <p className={styles.error}>Added to favourites</p>}
       <HeartIcon className={fav ? styles.fav : styles.icon} onClick={() => handleLike({title, backdrop_path: image, release_date: release, vote_average: rank, poster_path: poster, fav:true})}/>
       
     </article>

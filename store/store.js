@@ -1,13 +1,18 @@
 import { createStore } from "redux";
 
-const favsReducer = (state = {movies: []}, action) => {
-  if(action.type = 'ADD'){
-    console.log(action.movie);
-    return {
-      movies: [...state.movies, action.movie]
+const initialState = {
+  movies: []
+}
+
+const favsReducer = (state = initialState, action) => {
+  if (action.type = 'ADD' && action.movie) {
+      return {
+        ...state,
+        movies: [...state.movies, action.movie]
+      }
     }
-  }
-return state
+
+  return state
 }
 
 const store = createStore(favsReducer)

@@ -1,0 +1,33 @@
+/* Mixins */
+
+// Flexbox Mixin
+@mixin flex_dir_ali_jus($dir: row, $ali: flex-start, $jus: flex-start) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $ali;
+  justify-content: $jus;
+}
+
+@mixin side_padding($lr) {
+  padding: 0 $lr;
+}
+
+
+// Media Queries
+@mixin small() {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
