@@ -6,11 +6,12 @@ const initialState = {
 
 const favsReducer = (state = initialState, action) => {
   if (action.type = 'ADD' && action.movie) {
-      return {
-        ...state,
-        movies: [...state.movies, action.movie]
-      }
+    action.movie.fav = true
+    return {
+      ...state,
+      movies: [...state.movies, action.movie]
     }
+  }
 
   return state
 }
